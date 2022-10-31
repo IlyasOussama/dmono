@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Next.js Template (mockup)</title>
+    <meta name="description" content="Next.js Template (mockup) Description" />
+    <meta property="og:title" content="Next.js Template (mockup)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nextjs-template.usagizmo.com" />
+    <meta
+      property="og:image"
+      content="https://nextjs-template.usagizmo.com/images/ogp.png"
+    />
+    <meta property="og:site_name" content="Next.js Template (mockup)" />
+    <meta
+      property="og:description"
+      content="Next.js Template (mockup) Description"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Next.js Template (mockup)" />
+    <meta
+      name="twitter:description"
+      content="Next.js Template (mockup) Description"
+    />
+    <meta
+      name="twitter:image"
+      content="https://nextjs-template.usagizmo.com/images/ogp.png"
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="canonical" href="https://nextjs-template.usagizmo.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-noto.min.css"
+      integrity="sha384-Mb5ChwK0gMUKT5MGlNtjdw8pLyZZUPbKRbh6JuHPMGSrCVdBXsWLn/O2vBOKJlCy"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="u-prevent-animation">
+    <!-- <div id="initial-cover" class="fixed z-[60] top-0 left-0 w-full h-full bg-white duration-500"></div> -->
+    <header
+      id="header"
+      class="top-0 z-30 flex h-[80vh] flex-col items-center justify-center bg-white px-8 md:sticky md:h-auto md:flex-row md:py-4"
+    >
+      <h1 class="text-[28px] font-semibold leading-[1.25] tracking-[-0.02em]">
+        Next.js Template <code>(mockup)</code>
+      </h1>
+      <p class="mt-2 md:ml-auto md:mt-0 md:px-4 md:pl-4">
+        A starting point for building a static site.
+      </p>
+      <div class="mt-6 md:mt-0">
+        <a
+          href="https://github.com/usagizmo/nextjs-template"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-full bg-gray-800 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+        >
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <!-- Information -->
+    <div class="c-information">
+      <main class="bg-gradient-to-b from-blue-300 to-green-200 py-10">
+        <div class="container space-y-12">
+          <!-- Development -->
+          <div class="prose max-w-none">
+            <h2 class="text-center" data-in="slide-in">Development</h2>
+            <h3 data-in="slide-in">Uses</h3>
+            <div data-in="slide-in">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://turborepo.org/"
+                    >Turborepo</a
+                  >
+                  x
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://pnpm.io/"
+                    >pnpm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://prettier.io/"
+                    >Prettier</a
+                  >
+                  /
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://eslint.org"
+                    >ESLint</a
+                  >
+                  (w/
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/import-js/eslint-plugin-import"
+                    >eslint-plugin-import</a
+                  >)
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/okonet/lint-staged"
+                    >lint-staged</a
+                  >
+                  /
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/typicode/husky"
+                    >husky</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.whitesourcesoftware.com/free-developer-tools/renovate/"
+                    >Renovate</a
+                  >
+                  (w/
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/apps/renovate-approve"
+                    >renovate-approve</a
+                  >)
+                </li>
+                <li>
+                  GitHub Actions (Linting + Formatting + Testing (Validate
+                  <code>href</code> and <code>src</code> paths))
+                </li>
+                <li>
+                  Execute <code>eslint --fix</code> and
+                  <code>prettier</code> when saving with VS Code
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Apps and Packages -->
+          <div class="prose max-w-none">
+            <h2 class="text-center" data-in="slide-in">Apps and Packages</h2>
+            <div class="space-y-6 md:flex md:space-y-0">
+              <div class="flex-1 md:px-4">
+                <h3 class="slide-in">apps</h3>
+                <div data-in="slide-in">
+                  <ul>
+                    <li>
+                      <strong>mockup</strong><br />
+                      <a
+                        class="link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://tailwindcss.com"
+                        >Tailwind CSS</a
+                      >
+                      /
+                      <a
+                        class="link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://rollupjs.org/"
+                        >Rollup</a
+                      >
+                      /
+                      <a
+                        class="link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://htmlhint.com"
+                        >HTMLHint</a
+                      >
+                      /
+                      <a
+                        class="link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://webhint.io/"
+                        >webhint</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="md:px-4">
+                <h3 data-in="slide-in">packages</h3>
+                <div data-in="slide-in">
+                  <ul>
+                    <li>
+                      <strong>pathtest-utils</strong><br />Used in
+                      <code>apps/web/test/path.test.js</code>
+                    </li>
+                    <li>
+                      <strong>script-modules</strong><br />JS modules used in
+                      <code>apps/web/src/script.js</code>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commands -->
+          <div class="prose mb-[1em] max-w-none">
+            <h2 class="text-center" data-in="slide-in">Commands</h2>
+          </div>
+
+          <pre
+            class="slide-in overflow-auto rounded-2xl bg-gray-900 p-6 text-white"
+          ><code><span class="text-teal-300">pnpm</span> build     <span class="text-gray-400"># Build and then output to `public/*`</span>
+<span class="text-teal-300">pnpm</span> dev       <span class="text-gray-400"># Watch build files and launch browser-sync server on port 8000</span>
+<span class="text-teal-300">pnpm</span> lint      <span class="text-gray-400"># Linting</span>
+<span class="text-teal-300">pnpm</span> list:fix  <span class="text-gray-400"># Format with `eslint --fix`</span>
+<span class="text-teal-300">pnpm</span> test      <span class="text-gray-400"># Testing</span>
+<span class="text-teal-300">pnpm</span> clean     <span class="text-gray-400"># Delete `node_modules` etc.</span>
+
+<span class="text-gray-400"># `commands/*`</span>
+<span class="text-teal-300">pnpm</span> clean-image  <span class="text-gray-400"># Remove unused image files in `public/images/*`</span>
+<span class="text-teal-300">pnpm</span> deploy       <span class="text-gray-400"># When deploying to a VPS such as DigitalOcean using `rsync`</span></code></pre>
+
+          <!-- Buttons -->
+          <div class="flex items-center justify-center" data-in="slide-in">
+            <a
+              href="https://github.com/usagizmo/nextjs-template"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-gray-800 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="mt-4 flex items-center justify-center py-4">
+      <a href="https://usagizmo.com" target="_blank" rel="noopener noreferrer">
+        <small class="c-hover-underline text-[12px]">@usagizmo</small>
+      </a>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"
+      integrity="sha384-Fs8CyF8PlLvqu9rn1b8O+dBD76jC59CTmG9DcGXP8csOeXEm5RYPDLrV14vwqoJo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/ScrollToPlugin.min.js"
+      integrity="sha384-vevvlw/+5IF/pTmguUkHwxBAYqO6tswaEFrTKNXQc/t6OPIqUL9i8ffQER/dXH82"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/ScrollTrigger.min.js"
+      integrity="sha384-OEQ4Z63EZtbBv5cgE3T1rhJB9XfhCUPfF73pa4ceJQm1uROKhRU97yaXG1Se6ybK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
